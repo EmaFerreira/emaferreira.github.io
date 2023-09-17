@@ -1,0 +1,131 @@
+nav {
+    font-size: 20px;
+}
+
+#portNavBarContent {
+    flex: 1;
+    margin: auto !important;
+    display: flex;
+    justify-content: end;
+}
+
+
+#bottomNavbar,
+#bottomNavbarTitle {
+    font-size: 16px;
+}
+
+#bottomNavbar .nav-item {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+#dropDownReturn {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+#portNavBarContent .active {
+    color: #A7AE9D;
+}
+
+/* paragraphs content */
+
+.sinopse {
+    font-size: clamp(12px, 1.2vw, 18px);
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.sinopseSmallSize {
+    font-size: clamp(11px, 1.2vw, 14px);
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.descriptiveMem,
+.bottomLinks,
+.descriptiveMemOthers {
+    font-size: clamp(10px, 0.85vw, 14px);
+    line-height: 1.15;
+}
+
+.descriptiveMemOthers {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.descriptiveMemOthers a {
+    font-weight: 600;
+}
+
+.typeOfWork{
+    font-size: clamp(8px, 0.95vw, 10px);
+}
+
+/* bottom links content */
+.bottomLinks {
+    margin-top: 8%;
+    margin-bottom: 0px;
+    font-weight: 600;
+
+    /* para alinhar no bottom do div, a col parent tem de ter pos: relative */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.contentCol {
+    position: relative;
+}
+
+
+
+.divisorOndaSolo {
+    width: 40%;
+    max-width: 180px;
+}
+
+.divisorOndaSoloV2 {
+    width: 50%;
+    max-width: 200px;
+}
+
+.divisorOndaDuplo {
+    width: 60%;
+    height: auto;
+    min-width: 90px;
+}
+
+
+/* SUBMENU */
+#subMenuPortfolioSections {
+    background-color: #fffef7;
+    font-size: 9px;
+}
+
+#subMenuPortfolioSections p {
+    font-size: 11px;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 500;
+
+    color: #bcb8b1;
+}
+
+#subMenuPortfolioSections a {
+    color: #bcb8b1;
+}
+
+#subMenuPortfolioSections a:hover {
+    color: #846970;
+}
+
+.scrollMargin .row {
+    scroll-margin-top: 55px;
+}

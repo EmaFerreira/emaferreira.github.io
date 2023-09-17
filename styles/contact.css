@@ -1,0 +1,11 @@
+#email{
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+a:hover {
+    color: #575D4E;
+    text-decoration: none !important;
+    transition: 150ms;
+}

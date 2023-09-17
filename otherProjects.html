@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ema Ferreira</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- font-family: 'Advent Pro', sans-serif; -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- font-family: 'Jost', sans-serif; -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap stylessheet link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- my own stylesheet -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/portfolio.css">
+</head>
+
+<body>
+    <!-- navbar top: portfolio -->
+    <nav class="navbar fixed-top navbar-expand-md d-none d-md-block">
+        <div class="container-fluid">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0" id="portNavBarContent">
+                <li class="nav-item">
+                    <a class="nav-link" href="./installations.html">art installations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./compositions.html">music compositions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pedagogics.html">pedagogical projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./otherProjects.html">some more stuff</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- navbar down: main navbar -->
+
+    <nav class="navbar fixed-bottom navbar-expand-md d-none d-md-block">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" id="bottomNavbarTitle"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                    <path
+                        d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+                    <path fill-rule="evenodd"
+                        d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+                </svg></a>
+            <ul class="navbar-nav me-auto mb-2 mb-md-0" id="bottomNavbar">
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">about</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./agenda.html">agenda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">contact</a>
+                </li>
+        </div>
+    </nav>
+
+    <!-- collapsed navbar: main navbar -->
+    <nav class="navbar fixed-top  navbar-expand-md d-md-none" id="mainNavBar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./portfolioIndex.html">PORTFOLIO</a>
+            <button class="navbar-toggler border-0 shadow-none custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" id="buttonT">
+                <span id="iconT">+</span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0" id="mainNavBarContent">
+                    <li class="nav-item">
+                        <a class="nav-link" href="installations.html">art installations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="compositions.html">music compositions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pedagogics.html">pedagogical projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="otherProjects.html">other stuff</a>
+                    </li>
+
+                    <li class="nav-item dropdown-center d-md-none" id="portfolioDropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" id="dropDownReturn"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+                                <path fill-rule="evenodd"
+                                    d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li> <a class="dropdown-item" href="./about.html">about</a></li>
+                            <li><a class="dropdown-item" href="./agenda.html">agenda</a></li>
+                            <li><a class="dropdown-item" href="./contact.html">contact</a></li>
+                        </ul>
+                    </li>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid my-5 scrollMargin" id="portContainer">
+        <!-- o primeiro conteudo entre divisores tem pt-2 e os restantes pt-4
+        o primeiro divisor tem mt-md-3 e os restantes mt-md-5 -->
+
+        <!-- SUBMENU -->
+        <section class="sticky-top row align-items-center justify-content-center px-2 px-md-1 px-xl-3 py-0 py-1"
+            id="subMenuPortfolioSections">
+            <div class="col-12 col-lg-10 col-xxl-8 text-start text-md-start p-0 m-0 px-1 px-md-1">
+                <p class="p-0 m-0"> <a href="#webDev">web development</a> / <a href="#culturalProd">cultural
+                        production</a></p>
+
+            </div>
+        </section>
+
+        <!-- DIVISOR -->
+        <section class=" row align-items-center justify-content-center px-1 px-xl-3" id="webDev">
+            <!-- above lg screen size -->
+            <div class="col-4 d-md-none text-end pb-3 pt-0 pt-md-1 ps-2 ps-sm-5 m-0 mt-3">
+                <img src="./images/ondaWebsite_h.png" alt="img-fluid float-center" class="divisorOndaDuplo">
+            </div>
+            <div class="col-4 d-md-none text-center p-0 m-0 pb-3 pt-0 pt-md-1 m-0 mt-3">
+                <h1 class="m-0 text-center">web development</h1>
+            </div>
+            <div class="col-4 d-md-none text-start pb-3 pt-0 pt-md-1 pe-2 pe-sm-5 m-0 mt-3">
+                <img src="./images/ondaWebsite_h.png" alt="img-fluid float-center" class="divisorOndaDuplo">
+            </div>
+
+            <!-- from lg on -->
+            <div
+                class="d-none d-md-block col-md-4 col-lg-3 col-xxl-2 text-start py-3 pt-md-1 px-2 px-sm-5 px-md-1 m-0 mt-md-3">
+                <h1 class="m-0">web development</h1>
+            </div>
+            <div class="d-none d-md-block col-md-8 col-lg-7 col-xxl-6 text-start py-3 pt-md-1 px-2 px-sm-5 m-0 mt-md-3">
+                <img src="./images/ondaWebsite_h.png" alt="img-fluid float-center" class="divisorOndaSoloV2">
+            </div>
+        </section>
+
+        <!-- CONTEUDO -->
+        <section class="row align-items-stretch justify-content-center px-1 px-xl-3 pt-2">
+            <div class="col-12 col-md-5 col-lg-4 col-xxl-3 text-center px-2 px-sm-5 px-md-1">
+                <img src="./images/portfolio/otherStuff/myWebsite.png" class="img-fluid float-center" alt="">
+            </div>
+
+            <div
+                class="contentCol align-self-stretch col-12 col-md-7 col-lg-6 col-xxl-5 pt-3 pt-md-0 px-2 px-sm-5 px-md-2">
+                <h2 class="smallH2"><i>emaferreira.com</i></h2>
+                <h3>(2023)</h3>
+
+                <div class="row align-items-start h-75 p-0 m-0 py-3 py-md-1 py-xl-3 pb-5 pb-md-0">
+                    <div class="col-12 align-items-center m-0 p-0">
+                        <p class="descriptiveMem p-0 m-0 ">
+                            My own website, where my portfolio is compiled, was created by me from scratch.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTEUDO -->
+        <section class="row align-items-stretch justify-content-center px-1 px-xl-3 pt-2 mb-md-4">
+            <div class="col-12 col-md-5 col-lg-4 col-xxl-3 text-center px-2 px-sm-5 px-md-1">
+                <img src="./images/portfolio/otherStuff/designYourSound.png" class="img-fluid float-center" alt="">
+            </div>
+
+            <div
+                class="contentCol align-self-stretch col-12 col-md-7 col-lg-6 col-xxl-5 pt-3 pt-md-0 px-2 px-sm-5 px-md-2">
+                <h2 class="smallH2"><i>design your sound</i></h2>
+                <h3>(2023)</h3>
+
+                <div class="row align-items-start h-75 p-0 m-0 py-3 py-md-1 py-xl-3 pb-5 pb-md-0">
+                    <div class="col-12 align-items-center m-0 p-0">
+                        <p class="descriptiveMem p-0 m-0 ">
+                            <i>DESIGN YOUR SOUND</i> is a web application made as an academic work for a master course.
+                        </p>
+                        <p class="descriptiveMemOthers p-0"> It is a tool created with the aim of simplify the
+                            sound design. It is designed for those who want to find a sound file online
+                            and manipulate it in a simple and quick way.
+                        </p>
+                        <p class="descriptiveMemOthers p-0">
+                            All the sounds provided by DESIGN YOUR SOUND are part of the Freesound API.
+                            DESIGN YOUR SOUND only provides 0-Common Licenses sounds, which means all the soundfiles
+                            used inside this application are copyrights free.
+                        </p>
+                    </div>
+                </div>
+
+                <p class="bottomLinks pt-5 pt-md-1 px-2 px-sm-5 px-md-2"><a
+                        href="https://emaferreira.github.io/DesignYourSound/index.html" target="_blank">.web-app</a></p>
+            </div>
+        </section>
+
+        <!-- DIVISOR -->
+        <section class=" row align-items-center justify-content-center px-1 px-xl-3 mt-3 mt-md-2" id="culturalProd">
+            <!-- above lg screen size -->
+            <div class="col-4 d-md-none text-end py-3 pt-md-1 ps-2 ps-sm-5 m-0 mt-md-5">
+                <img src="./images/ondaWebsite_h.png" alt="img-fluid float-center" class="divisorOndaDuplo">
+            </div>
+            <div class="col-4 d-md-none text-center p-0 m-0 py-3 pt-md-1 m-0 mt-md-5">
+                <h1 class="m-0">cultural production</h1>
+            </div>
+            <div class="col-4 d-md-none text-start py-3 pt-md-1 pe-2 pe-sm-5 m-0 mt-md-5">
+                <img src="./images/ondaWebsite_h.png" alt="img-fluid float-center" class="divisorOndaDuplo">
+            </div>
+
+            <!-- from lg on -->
+            <div
+                class="d-none d-md-block col-md-4 col-lg-3 col-xxl-2 text-start py-3 pt-md-1 px-2 px-sm-5 px-md-1 m-0 mt-md-3">
+                <h1 class="m-0">cultural production</h1>
+            </div>
+            <div class="d-none d-md-block col-md-8 col-lg-7 col-xxl-6 text-start py-3 pt-md-1 px-2 px-sm-5 m-0 mt-md-3">
+                <img src="./images/ondaWebsite_h.png" alt="img-fluid float-center" class="divisorOndaSoloV2">
+            </div>
+        </section>
+
+        <!-- CONTEUDO -->
+        <section class="row align-items-stretch justify-content-center px-1 px-xl-3 pt-2">
+            <div class="col-12 col-md-5 col-lg-4 col-xxl-3 text-center px-2 px-sm-5 px-md-1">
+                <img src="./images/portfolio/otherStuff/dossie_Guerrilha_1.png" class="img-fluid float-center" alt="">
+            </div>
+
+            <div
+                class="contentCol align-self-stretch col-12 col-md-7 col-lg-6 col-xxl-5 pt-3 pt-md-0 px-2 px-sm-5 px-md-2">
+                <h2 class="smallH2"><i>cultural projects dossiers</i></h2>
+
+                <div class="row align-items-start h-75 p-0 m-0 py-3 py-md-1 py-xl-3 pb-5 pb-md-0">
+                    <div class="col-12 align-items-center m-0 p-0">
+                        <p class="descriptiveMem p-0 m-0 ">
+                            As part of my cultural production work, I have carried out editing and pagination of project
+                            dossiers.
+                        </p>
+
+                        <p class="descriptiveMemOthers p-0 pt-3 ">
+                            <a href="https://drive.google.com/file/d/1BNZ8DXvlh1wAV4By0DGRruawFBKFem_z/view?usp=sharing"
+                                target="_blank">.GUERRILLA</a>
+                        </p>
+                        <p class="descriptiveMemOthers p-0">
+                            <a href="https://drive.google.com/file/d/1kOTWvCogKOI9CaL4NRh4uEgtRdXhst5n/view?usp=sharing"
+                                target="_blank">.arts education project proposal</a>
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/portfolio.js"></script>
+</body>
+
+</html>

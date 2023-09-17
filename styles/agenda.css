@@ -1,0 +1,55 @@
+.list-group-item {
+    background-color: #FFFEF7;
+
+    font-family: 'Jost', sans-serif;
+    color: #575D4E;
+    font-weight: 400;
+    font-size: 16px;
+    border: 0px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+p {
+    font-size: clamp(12px, 0.95vw, 14px);
+    line-height: 1.15;
+}
+
+.eventDay {
+    font-family: 'Advent Pro', sans-serif;
+    color: #846970;
+    font-size: clamp(14px, 0.95vw, 16px);
+    font-weight: 700;
+}
+
+/* SUBMENU */
+#subMenuYears {
+    background-color: #fffef7;
+    font-size: 9px;
+}
+
+#subMenuYears p {
+    font-size: 11px;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 500;
+
+    color: #bcb8b1;
+}
+
+#subMenuYears a {
+    color: #bcb8b1;
+}
+
+#subMenuYears a:hover {
+    color: #846970;
+}
+
+.country{
+    font-size: clamp(9px, 0.95vw, 11px);
+}
+
+.scrollMargin .row {
+    scroll-margin-top: 65px;
+}

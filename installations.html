@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ema Ferreira</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- font-family: 'Advent Pro', sans-serif; -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- font-family: 'Jost', sans-serif; -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap stylessheet link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- my own stylesheet -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/portfolio.css">
+
+</head>
+
+<body>
+    <!-- navbar top: portfolio -->
+    <nav class="navbar fixed-top navbar-expand-md d-none d-md-block">
+        <div class="container-fluid">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0" id="portNavBarContent">
+                <li class="nav-item">
+                    <a class="nav-link active" href="./installations.html">art installations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./compositions.html">music compositions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pedagogics.html">pedagogical projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./otherProjects.html">some more stuff</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- navbar down: main navbar -->
+
+    <nav class="navbar fixed-bottom navbar-expand-md d-none d-md-block">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" id="bottomNavbarTitle"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                    <path
+                        d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+                    <path fill-rule="evenodd"
+                        d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+                </svg></a>
+            <ul class="navbar-nav me-auto mb-2 mb-md-0" id="bottomNavbar">
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">about</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./agenda.html">agenda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">contact</a>
+                </li>
+        </div>
+    </nav>
+
+    <!-- collapsed navbar: main navbar -->
+    <nav class="navbar fixed-top  navbar-expand-md d-md-none" id="mainNavBar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./portfolioIndex.html">PORTFOLIO</a>
+            <button class="navbar-toggler border-0 shadow-none custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" id="buttonT">
+                <span id="iconT">+</span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0" id="mainNavBarContent">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="installations.html">art installations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="compositions.html">music compositions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pedagogics.html">pedagogical projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="otherProjects.html">other stuff</a>
+                    </li>
+
+                    <li class="nav-item dropdown-center d-md-none" id="portfolioDropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" id="dropDownReturn"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+                                <path fill-rule="evenodd"
+                                    d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li> <a class="dropdown-item" href="./about.html">about</a></li>
+                            <li><a class="dropdown-item" href="./agenda.html">agenda</a></li>
+                            <li><a class="dropdown-item" href="./contact.html">contact</a></li>
+                        </ul>
+                    </li>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <main class="container-fluid my-5 scrollMargin" id="portContainer">
+        <!-- DEFINIÇÕES DAS IMAGENS: 300pi de definição; 1512px por 1512px; 32bit -->
+
+        <!-- SUBMENU -->
+        <section class="sticky-top row align-items-center justify-content-center px-2 px-md-1 px-xl-3 py-0 py-1"
+            id="subMenuPortfolioSections">
+            <div class="col-12 col-lg-10 col-xxl-8 text-start text-md-start p-0 m-0 px-1 px-md-1 ">
+                <p class="p-0 m-0"> <a href="#ano2023">2023</a> / <a href="#ano2022">2022</a></p>
+
+            </div>
+        </section>
+
+        <!-- CONTEUDO - apenas este 1º tem margem top -->
+        <section class="row align-items-center justify-content-center px-1 px-xl-3 pt-1 pt-md-2" id="ano2023">
+            <div class="col-12 col-md-5 col-lg-4 col-xxl-3 text-center px-2 px-sm-5 px-md-1">
+                <img src="./images/portfolio/installations/treeDimensional.png" class="img-fluid float-center" alt="">
+            </div>
+
+            <div
+                class="contentCol align-self-stretch col-12 col-md-7 col-lg-6 col-xxl-5 pt-3 pt-md-0 px-2 px-sm-5 px-md-2">
+                <h2>tree<span class="alignHyphens">–</span>dimensional</h2>
+                <h3>(2023 <span class="alignHyphens">–</span> work in progress)</h3>
+
+                <div class="row align-items-center h-75 p-0 m-0 py-3 pb-5 pb-md-0">
+                    <div class="col-12 align-items-center m-0 p-0">
+                        <p class="text-center text-lg-start sinopse  m-0 p-0  pb-4 pb-md-0 ">
+                            A music
+                            box
+                            that
+                            fills
+                            the space and invites
+                            us to admire and spend time with a ballerina full of branches, leaves, and roots.</p>
+                    </div>
+
+                    <div class="col-12 align-items-center m-0 p-0 pt-2">
+                        <p class="descriptiveMem p-0 m-0 ">
+                            <i>tree-dimensional</i> is an interactive installation that was born from the observation
+                            and regular photographic
+                            recording
+                            of a
+                            tree over the course of a year. About twice a month, the tree is photographed around its
+                            stem,
+                            creating a stop-motion video of it
+                            rotating, as seen from below. Each exported video is approximately 30 seconds long, and a
+                            musical
+                            component of the same duration is composed for it.
+                        </p>
+                        <p class="descriptiveMemOthers p-0">
+                            With a wooden turntable, the tree is rotated, and the music becomes audible. It is possible
+                            either
+                            to pause at a specific moment and feel each granule change slowly or to constantly oscillate
+                            between
+                            accelerations – it can be, for those who desire it, a process of listening and
+                            contemplation.
+                        </p>
+                        <p class="descriptiveMemOthers p-0">
+                            The work does not intend to establish a relationship with the tree but rather with its
+                            memory,
+                            which, although explicitly captured in a photograph, is also distorted and exaggerated by
+                            the
+                            time
+                            and context in which we find ourselves.</p>
+                        <p class="descriptiveMemOthers typeOfWork p-0 pt-2">(this work is part of my master's thesis
+                            project in music composition)</p>
+                    </div>
+                </div>
+
+
+
+                <p class="bottomLinks p-0 m-0 px-2 px-sm-5 px-md-2"><a
+                        href="https://ipppt-my.sharepoint.com/:v:/g/personal/4180097_esmae_ipp_pt/EZPvkiTe0HpJvXJQiLbrmmoBNh41pCzoH6SnctRfvPiinw?e=e6mEbS"
+                        target="_blank">.prototype-video</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- DIVISOR -->
+        <div class="row align-items-center justify-content-start">
+            <div class="col-12 col-md-5 text-center text-md-end p-4 px-md-2">
+                <img src="./images/ondaWebsite_h.png" alt="img-fluid float-center" class="divisorOndaSolo">
+            </div>
+        </div>
+
+        <!-- CONTEUDO -->
+        <section class="row align-items-stretch justify-content-center px-1 px-xl-3 pt-2 pt-md-0">
+            <div class="col-12 col-md-5 col-lg-4 col-xxl-3 text-center px-2 px-sm-5 px-md-1">
+                <img src="./images/portfolio/installations/facialUnit.png" class="img-fluid float-center" alt="">
+            </div>
+            <div
+                class="contentCol align-self-stretch col-12 col-md-7 col-lg-6 col-xxl-5 pt-3 pt-md-0 px-2 px-sm-5 px-md-2">
+                <h2>facial_unit.pde</h2>
+                <h3>(2023)</h3>
+
+                <div class="row align-items-center h-75 p-0 m-0 py-3 pb-5 pb-md-0">
+                    <div class="col-12 align-items-center m-0 p-0">
+                        <p class="text-center text-lg-start sinopse  m-0 p-0  pb-4 pb-md-0 ">A real-time composite
+                            portrait.</p>
+                    </div>
+
+                    <div class="col-12 align-items-center m-0 p-0 pt-2">
+                        <p class="descriptiveMem p-0 m-0 "> <i>facial_unit.pde</i> is an interactive installation that
+                            presents a stream of images
+                            captured via a webcam and showcased on a screen within a public setting.The faces and
+                            expressions of the individuals who interact with the installation are stored, aligned, and
+                            superimposed in real-time, creating a collective and dynamic representation that merges
+                            their identities into a composite portrait.</p>
+
+                        <p class="descriptiveMemOthers p-0"> The installation seeks to understand the
+                            demographic diversity of these same individuals, highlighting and questioning the concept of
+                            community, as well as its intrinsic diversity.
+
+                        </p>
+                        <p class="descriptiveMemOthers p-0">The artwork aims to challenge the viewer to
+                            reflect upon this average human figure located in the exhibition space, and the increased
+                            adoption of facial recognition technology for surveillance, monitoring and military
+                            purposes, questioning evasion techniques and their ethical and social implications.</p>
+                        <p class="descriptiveMemOthers typeOfWork p-0 pt-2">
+                            (this work was created in collaboration with Daniel Martins and João Simões, as part of the
+                            Master in Interactive Media)</p>
+                    </div>
+                </div>
+
+                <p class="bottomLinks pt-5 pt-md-1 px-2 px-sm-5 px-md-2"><a
+                        href="https://ipppt-my.sharepoint.com/:v:/g/personal/40220363_esmad_ipp_pt/ESKAkPci4M1JqQAe-Paa_UwBwVOFwjtNLiAjxvUZUG7Hzg"
+                        target="_blank">.teaser</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- DIVISOR -->
+        <div class="row align-items-center justify-content-start">
+            <div class="col-12 col-md-5 text-center text-md-end p-4 px-md-2">
+                <img src="./images/ondaWebsite_h.png" alt="img-fluid float-center" class="divisorOndaSolo">
+            </div>
+        </div>
+
+        <!-- CONTEUDO -->
+        <section class="row align-items-stretch justify-content-center px-1 px-xl-3  pt-2 pt-md-0">
+            <div class="col-12 col-md-5 col-lg-4 col-xxl-3 text-center px-2 px-sm-5 px-md-1">
+                <img src="./images/portfolio/installations/transumanismo.png" class="img-fluid float-center" alt="">
+            </div>
+            <div
+                class="contentCol align-self-stretch col-12 col-md-7 col-lg-6 col-xxl-5 pt-3 pt-md-0 px-2 px-sm-5 px-md-2">
+                <h2>9075iAHR</h2>
+                <h3>(2023)</h3>
+
+                <div class="row align-items-center h-75 p-0 m-0 py-3 pb-5 pb-md-0">
+                    <div class="col-12 align-items-center m-0 p-0">
+                        <p class="text-center text-lg-start sinopse  m-0 p-0  pb-4 pb-md-0 ">We consume and are consumed
+                            by technology. <br>It has become an extension and mirror of ourselves.</p>
+                    </div>
+
+                    <div class="col-12 align-items-center m-0 p-0 pt-2">
+                        <p class="descriptiveMem p-0 m-0 "><i>9075iAHR</i> explores Transhumanism, with a focus on the
+                            prefix
+                            'trans', derived from the verb 'transcend'— something that goes beyond common boundaries.
+                        </p>
+
+                        <p class="descriptiveMemOthers p-0">
+                            The
+                            project is based on Blaise Pascal's premise, <i>"L'homme passe l'homme"</i>, which translates to
+                            "Man transcends himself".
+                        </p>
+                        <p class="descriptiveMemOthers p-0">In <i>9075iAHR</i> the exhibition space becomes an
+                            extrapolation
+                            and distorted extension of the visitors, creating a loop. It includes projection on three
+                            walls, as well as three central
+                            pieces that work as a single composition representing the physical essence of
+                            technological hardware, an awareness of it, and creating something that the audience can
+                            interact with, encompassing all devices used in this interactive audiovisual project, and
+                            providing control (whether real, fake, or accidental) to the public.</p>
+
+                        <p class="descriptiveMemOthers typeOfWork p-0 pt-2">
+                            (this work was created in collaboration with Daniel Martins and João Simões, as part of the
+                            Master in Interactive Media)</p>
+                    </div>
+                </div>
+
+                <p class="bottomLinks pt-5 pt-md-1 px-2 px-sm-5 px-md-2"><a href="https://vimeo.com/793144508"
+                        target="_blank">.teaser</a> &nbsp <a href="https://vimeo.com/793141323" target="_blank">.making of</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- DIVISOR -->
+        <div class="row align-items-center justify-content-start" id="ano2022">
+            <div class="col-12 col-md-5 text-center text-md-end p-4 px-md-2">
+                <img src="./images/ondaWebsite_h.png" alt="img-fluid float-center" class="divisorOndaSolo">
+            </div>
+        </div>
+
+        <!-- CONTEUDO -->
+        <section class="row align-items-stretch justify-content-center px-1 px-xl-3 pt-2 pt-md-0">
+            <div class="col-12 col-md-5 col-lg-4 col-xxl-3 text-center px-2 px-sm-5 px-md-1">
+                <img src="./images/portfolio/installations/seven.png" class="img-fluid float-center" alt="">
+            </div>
+            <div
+                class="contentCol align-self-stretch col-12 col-md-7 col-lg-6 col-xxl-5 pt-3 pt-md-0 px-2 px-sm-5 px-md-2">
+                <h2>Septem</h2>
+                <h3>(2022)</h3>
+
+                <div class="row align-items-center h-75 p-0 m-0 py-3 pb-5 pb-md-0">
+                    <div class="col-12 align-items-center m-0 p-0">
+                        <p class="text-center text-lg-start sinopse  m-0 p-0  pb-4 pb-md-0 ">Wrath. Lust. Greed.
+                            Gluttony. Pride. Sloth. Envy.</p>
+                    </div>
+
+                    <div class="col-12 align-items-center m-0 p-0 pt-2">
+                        <p class="descriptiveMem p-0 m-0 ">
+                            <i>Septem</i> is a portrait of the seven deadly sins.
+                        </p>
+
+                        <p class="descriptiveMemOthers p-0"> It doesn't aim to be a portrait of the actions that arise
+                            as a sin's consequence; it aims to
+                            be a portrait of its interior, simultaneously in its simplest and most complex form.
+                            What does feel look like? How do we make it visible?
+
+                        </p>
+                        <p class="descriptiveMemOthers p-0">Through this bust, which represents Humanity, with shapes,
+                            colours and a lot of cultural
+                            symbolism, we speculate an image of the feeling that dwells in each of the sins. And we
+                            invite the audience to speculate with us, projecting these visual metaphors within
+                            themselves.</p>
+                        <p class="descriptiveMemOthers typeOfWork p-0 pt-2">
+                            (this work was created in collaboration with Beatriz Nogueira and Beatriz Paiva for the
+                            CINANIMA LAB – an exhibition of ESMAD's work at Cinanima Festival)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DIVISOR -->
+        <div class="row align-items-center justify-content-start">
+            <div class="col-12 col-md-5 text-center text-md-end p-4 px-md-2">
+                <img src="./images/ondaWebsite_h.png" alt="img-fluid float-center" class="divisorOndaSolo">
+            </div>
+        </div>
+
+        <!-- CONTEUDO -->
+        <section class="row align-items-stretch justify-content-center px-1 px-xl-3 pt-2 pt-md-0">
+            <div class="col-12 col-md-5 col-lg-4 col-xxl-3 text-center px-2 px-sm-5 px-md-1">
+                <img src="./images/portfolio/installations/mundos.png" class="img-fluid float-center" alt="">
+            </div>
+            <div
+                class="contentCol align-self-stretch col-12 col-md-7 col-lg-6 col-xxl-5 pt-3 pt-md-0 px-2 px-sm-5 px-md-2">
+                <h2>¿ MUNDOS ?</h2>
+                <h3>(2022)</h3>
+
+                <div class="row align-items-center h-75 p-0 m-0 py-3 pb-5 pb-md-0">
+                    <div class="col-12 align-items-center m-0 p-0">
+                        <p class="text-center text-lg-start sinopse  m-0 p-0  pb-4 pb-md-0 ">What does the radio on the
+                            opposite side of the globe tell you about its country?<br>
+                            What about the radios worldwide?
+                        </p>
+                    </div>
+
+                    <div class="col-12 align-items-center m-0 p-0 pt-2">
+                        <p class="descriptiveMem p-0 m-0 ">If we draw a horizontal line above and below Portugal from
+                            one end to the other of a world map, we create a rectangle that fully or partially
+                            encompasses approximately seventeen countries.</p>
+
+                        <p class="descriptiveMemOthers p-0">In the room where the installation takes
+                            place, there is a horizontal line on the floor representing the space of the rectangle drawn
+                            on the world map.
+                        </p>
+                        <p class="descriptiveMemOthers p-0">When visitors stand on this line, audiovisual content about
+                            the country corresponding to that location emerges: visually, presenting facts and
+                            curiosities; audibly, playing broadcasts from local radio stations.</p>
+                        <p class="descriptiveMemOthers typeOfWork p-0 pt-2">
+                            (this work was created as part of
+                            the
+                            Master in Interactive Media)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/portfolio.js"></script>
+</body>
+
+</html>

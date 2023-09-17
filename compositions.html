@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ema Ferreira</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- font-family: 'Advent Pro', sans-serif; -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- font-family: 'Jost', sans-serif; -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap stylessheet link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- my own stylesheet -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/portfolio.css">
+
+</head>
+
+<body>
+    <!-- navbar top: portfolio -->
+    <nav class="navbar fixed-top navbar-expand-md d-none d-md-block">
+        <div class="container-fluid">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0" id="portNavBarContent">
+                <li class="nav-item">
+                    <a class="nav-link" href="./installations.html">art installations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./compositions.html">music compositions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pedagogics.html">pedagogical projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./otherProjects.html">some more stuff</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- navbar down: main navbar -->
+
+    <nav class="navbar fixed-bottom navbar-expand-md d-none d-md-block">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" id="bottomNavbarTitle"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                    <path
+                        d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+                    <path fill-rule="evenodd"
+                        d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+                </svg></a>
+            <ul class="navbar-nav me-auto mb-2 mb-md-0" id="bottomNavbar">
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">about</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./agenda.html">agenda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">contact</a>
+                </li>
+        </div>
+    </nav>
+
+    <!-- collapsed navbar: main navbar -->
+    <nav class="navbar fixed-top navbar-expand-md d-md-none" id="mainNavBar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./portfolioIndex.html">PORTFOLIO</a>
+            <button class="navbar-toggler border-0 shadow-none custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" id="buttonT">
+                <span id="iconT">+</span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0" id="mainNavBarContent">
+                    <li class="nav-item">
+                        <a class="nav-link" href="installations.html">art installations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="compositions.html">music compositions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pedagogics.html">pedagogical projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="otherProjects.html">other stuff</a>
+                    </li>
+
+                    <li class="nav-item dropdown-center d-md-none" id="portfolioDropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" id="dropDownReturn"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+                                <path fill-rule="evenodd"
+                                    d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li> <a class="dropdown-item" href="./about.html">about</a></li>
+                            <li><a class="dropdown-item" href="./agenda.html">agenda</a></li>
+                            <li><a class="dropdown-item" href="./contact.html">contact</a></li>
+                        </ul>
+                    </li>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid my-5 scrollMargin" id="portContainer">
+        <!-- DEFINIÇÕES DAS IMAGENS: 300pi de definição; 1512px por 756; 32bit 
+             ou seja, metade do tamanho das img das instalações -->
+
+        <!-- o primeiro conteudo entre divisores tem pt-2 e os restantes pt-4 -->
+
+        <!-- SUBMENU -->
+        <section class="sticky-top row align-items-center justify-content-center px-2 px-md-1 px-xl-3 py-0 py-1"
+            id="subMenuPortfolioSections">
+            <div class="col-12 col-lg-10 col-xxl-8 text-start text-md-start p-0 m-0 px-1 px-md-1">
+                <p class="p-0 m-0"> <a href="#withElectronics">with electronics</a> / <a
+                        href="#acousmatic">acousmatic</a> / <a href="#acoustic">acoustic</a> / <a href="#forScreen">for
+                        screen</a></p>
+
+            </div>
+        </section>
+
+
+        <!-- DIVISOR este primeiro tem margins diferentes e a class marginBig p/ scroll através do ID -->
+        <section class=" row align-items-center justify-content-center px-1 px-xl-3" id="withElectronics">
+            <!-- above lg screen size -->
+            <div class="col-4 d-md-none text-end pb-3 pt-0 pt-md-1 ps-2 ps-sm-5 m-0 mt-3">
+                <img src="./images/ondaWebsite_h.png" alt="img-fluid float-center" class="divisorOndaDuplo">
+            </div>
+            <div class="col-4 d-md-none text-center p-0 m-0 pb-3 pt-0 pt-md-1 m-0 mt-3">
+                <h1 class="m-0">with electronics</h1>
+            </div>
+            <div class="col-4 d-md-none text-start pb-3 pt-0 pt-md-1 pe-2 pe-sm-5 m-0 mt-3">
+                <img src="./images/ondaWebsite_h.png" alt="img-fluid float-center" class="divisorOndaDuplo">
+            </div>
+
+            <!-- from lg on -->
+            <div
+                class="d-none d-md-block col-md-4 col-lg-3 col-xxl-2 text-start py-3 pt-md-1 px-2 px-sm-5 px-md-1 m-0 mt-md-3">
+                <h1 class="m-0">with electronics</h1>
+            </div>
+            <div class="d-none d-md-block col-md-8 col-lg-7 col-xxl-6 text-start py-3 pt-md-1 px-2 px-sm-5 m-0 mt-md-3">
+                <img src="./images/ondaWebsite_h.png" alt="img-fluid float-center" class="divisorOndaSoloV2">
+            </div>
+        </section>
+
+        <!-- CONTEUDO -->
+        <section class="row align-items-stretch justify-content-center px-1 px-xl-3  pt-2">
+            <div class="col-12 col-md-5 col-lg-4 col-xxl-3 text-center px-2 px-sm-5 px-md-1">
+                <img src="./images/portfolio/compositions/insensibilis.png" class="img-fluid float-center" alt="">
+            </div>
+
+            <div
+                class="contentCol align-self-stretch col-12 col-md-7 col-lg-6 col-xxl-5 pt-3 pt-md-0 px-2 px-sm-5 px-md-2">
+                <h2 class="smallH2">(in)sensibilis</h2>
+                <h3>(2023 <span class="alignHyphens">–</span> work in progress)</h3>
+
+                <div class="row align-items-start h-75 p-0 m-0 py-3 py-md-1 py-xl-3 pb-5 pb-md-0">
+                    <div class="col-12 align-items-center m-0 p-0">
+                        <p class="descriptiveMem p-0 m-0 ">
+                            Written for one cello, one dancer with heartbeat sensor and electronics,
+                            <i>(in)sensibilis</i> is a
+                            work in open form, where the heartbeat serves as the guiding thread of the performance: they
+                            are transformed into score, sound, body movement and light.
+
+                        </p>
+                        <p class="descriptiveMemOthers p-0">
+                            This is not a piece about (im)mortality, but rather about the desire for observation and
+                            awareness of the pulse, devoid of judgments, similar to a meditative state.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTEUDO -->
+        <section class="row align-items-stretch justify-content-center px-1 px-xl-3  pt-4">
+            <div class="col-12 col-md-5 col-lg-4 col-xxl-3 text-center px-2 px-sm-5 px-md-1">
+                <img src="./images/portfolio/compositions/queroIr.png" class="img-fluid float-center" alt="">
+            </div>
+
+            <div
+                class="contentCol align-self-stretch col-12 col-md-7 col-lg-6 col-xxl-5 pt-3 pt-md-0 px-2 px-sm-5 px-md-2">
+                <h2 class="smallH2">Quero ir</h2>
+                <h3>(2021)</h3>
+
+                <div class="row align-items-start h-75 p-0 m-0 py-3 py-md-1 py-xl-3 pb-5 pb-md-0">
+                    <div class="col-12 align-items-center m-0 p-0">
+                        <p class="descriptiveMem p-0 m-0 ">
+                            <i>Quero ir</i> is a music work for soprano and fixed media, which uses the homonymous poem
+                            by the
+                            soprano Beatriz Ramos. The sounds of spoken, sung and whispered voices present in
+                            electronics came from recordings of the poem made with Beatriz.
+
+                        </p>
+                        <p class="descriptiveMemOthers p-0">The use of these recordings is crucial for the work's
+                            universe, where the electronics and the singer are offshoots of each other, until it becomes
+                            ambiguous to discern the sound origin, leading us to assume they are one.
+                        </p>
+                    </div>
+                </div>
+
+                <p class="bottomLinks pt-5 pt-md-1 px-2 px-sm-5 px-md-2"><a
+                        href="https://www.youtube.com/watch?v=6lfB1BbbsIU" target="_blank">.live recording</a></p>
+            </div>
+        </section>
+
+
+        <!-- CONTEUDO -->
+        <section class="row align-items-stretch justify-content-center px-1 px-xl-3  pt-4">
+            <div class="col-12 col-md-5 col-lg-4 col-xxl-3 text-center px-2 px-sm-5 px-md-1">
+                <img src="./images/portfolio/compositions/pavao.png" class="img-fluid float-center" alt="">
+            </div>
+
+            <div
+                class="contentCol align-self-stretch col-12 col-md-7 col-lg-6 col-xxl-5 pt-3 pt-md-0 px-2 px-sm-5 px-md-2">
+                <h2 class="smallH2">Pavão</h2>
+                <h3>(2020)</h3>
+
+                <div class="row align-items-start h-75 p-0 m-0 py-3 py-md-1 py-xl-3 pb-5 pb-md-0">
+                    <div class="col-12 align-items-center m-0 p-0">
+                        <p class="descriptiveMem p-0 m-0 ">
+                            <i>Pavão</i> is a project for real-time multimedia and flexible instrumentation.
+                            The performer is asked to improvise under fragments (slightly worked) of a popular
+                            Portuguese folk song: "Antoninho, como criança (O Pavão)", which was sourced from
+                            <i>Cancioneiro Popular Português</i>, collected by Michel Giacometti and Fernando Lopes
+                            Graça.
+                        </p>
+                        <p class="descriptiveMemOthers p-0"> Ideally, the score fragments are chosen in real-time by a
+                            second person, however, the piece
+                            can also be performed in solo, making use of a programmed sequence. In this way, the score
+                            has a part that is generated in real-time. The performance results in the growth of a tree,
+                            which is occasionally briefly interrupted.
+                        </p>
+                    </div>
+                </div>
+
+                <p class="bottomLinks pt-5 pt-md-1 px-2 px-sm-5 px-md-2"><a
+                        href="https://youtu.be/jNrUFpvmNx0?si=ORW34uwb6EI_2B5B" target="_blank">.recording</a></p>
+            </div>
+        </section>
+
+        <!-- CONTEUDO -->
+        <section class="row align-items-stretch justify-content-center px-1 px-xl-3  pt-4">
+            <div class="col-12 col-md-5 col-lg-4 col-xxl-3 text-center px-2 px-sm-5 px-md-1">
+                <img src="./images/portfolio/compositions/damascoRoxo.png" class="img-fluid float-center" alt="">
+            </div>
+
+            <div
+                class="contentCol align-self-stretch col-12 col-md-7 col-lg-6 col-xxl-5 pt-3 pt-md-0 px-2 px-sm-5 px-md-2">
+                <h2 class="smallH2">Damasco Roxo</h2>
+                <h3>(2019)</h3>
+
+                <div class="row align-items-start h-75 p-0 m-0 py-3 py-md-1 py-xl-3 pb-5 pb-md-0">
+
+                    <div class="col-12 align-items-center m-0 p-0">
+                        <p class="descriptiveMem p-0 m-0 ">
+                            <i>damasco roxo</i> is a composition for euphonium and fixed media based on the folk
+                            song "Indo o Lavrador à Noite," sourced from the <i>Cancioneiro Popular Português</i>
+                            collected by
+                            Michel Giacometti and Fernando Lopes-Graça.   The electronic part was created by sampling recordings of this melody, its text, and free
+                            improvisations about it by the jazz singer Maria Inês Gouveia. The euphonium line is
+                            also based on the folk song, aiming to explore the various timbres and
+                            registers of the instrument while establishing a connection with the vocal elements present
+                            in the tape.
+                        </p>
+
+                        <p class="descriptiveMemOthers typeOfWork p-0 pt-2 pt-md-1 pt-lg-2">(this work was composed at
+                            the request of
+                            Álvaro Valente da Silva as part of his master's thesis).
+                        </p>
+                    </div>
+                </div>
+
+                <p class="bottomLinks p-0 m-0 px-2 px-sm-5 px-md-2"><a
+                        href="https://www.youtube.com/watch?v=yagov21kJqY" target="_blank">.live recording</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTEUDO -->
+        <section class="row align-items-stretch justify-content-center px-1 px-xl-3 pt-4 mb-md-4">
+            <div class="col-12 col-md-5 col-lg-4 col-xxl-3 text-center px-2 px-sm-5 px-md-1">
+                <img src="./images/portfolio/compositions/infusoes.png" class="img-fluid float-center" alt="">
+            </div>
+
+            <div
+                class="contentCol align-self-stretch col-12 col-md-7 col-lg-6 col-xxl-5 pt-3 pt-md-0 px-2 px-sm-5 px-md-2">
+                <h2 class="smallH2">(in)fusões</h2>
+                <h3>(2019)</h3>
+
+                <div class="row align-items-start h-75 p-0 m-0 py-3 py-md-1 py-xl-3 pb-5 pb-md-0">
+
+                    <div class="col-12 align-items-center m-0 p-0">
+                        <p class="descriptiveMem p-0 m-0 ">
+                            <i>(in)fusões</i>
+                            (in)fusões is a work in open form for guitar and fixed media.Throughout the piece, a
+                            dialogue between the guitar and the electronics.
+                        </p>
+                        <p class="descriptiveMemOthers p-0">
+                            The main idea is to
+                            create a fusion between their events and sounds, like in the infusing (tr. infusões) of tea
+                            in water. Nevertheless, it is up to each one to choose which instrument represents one and
+                            the other, since here they don't exist alone.
+                        </p>
+                    </div>
+                </div>
+
+                <p class="bottomLinks p-0 m-0 px-2 px-sm-5 px-md-2"><a
+                        href="https://www.youtube.com/watch?v=DlDmZJF1r4c" target="_blank">.live recording</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- DIVISOR
+        
+        o conteudo antes deste deve ter um mb-md-4 !!! -->
+        <section class=" row align-items-center justify-content-center px-1 px-xl-3" id="acousmatic">
+            <!-- above lg screen size -->
+            <div class="col-4 d-md-none text-end py-3 pt-md-1 ps-2 ps-sm-5 m-0 mt-md-5">
+                <img src="./images/ondaWebsite_h.png" alt="img-fluid float-center" class="divisorOndaDuplo">
+            </div>
+            <div class="col-4 d-md-none text-center p-0 m-0 py-3 pt-md-1 m-0 mt-md-5">
+                <h1 class="m-0">acousmatic</h1>
+            </div>
+            <div class="col-4 d-md-none text-start py-3 pt-md-1 pe-2 pe-sm-5 m-0 mt-md-5">
+                <img src="./images/ondaWebsite_h.png" alt="img-fluid float-center" class="divisorOndaDuplo">
+            </div>
+
+            <!-- from lg on -->
+            <div
+                class="d-none d-md-block col-md-4 col-lg-3 col-xxl-2 text-start py-3 pt-md-1 px-2 px-sm-5 px-md-1 m-0 mt-md-3">
+                <h1 class="m-0">acousmatic</h1>
+            </div>
+            <div class="d-none d-md-block col-md-8 col-lg-7 col-xxl-6 text-start py-3 pt-md-1 px-2 px-sm-5 m-0 mt-md-3">
+                <img src="./images/ondaWebsite_h.png" alt="img-fluid float-center" class="divisorOndaSoloV2">
+            </div>
+        </section>
+
+        <!-- CONTEUDO -->
+        <section class="row align-items-stretch justify-content-center px-1 px-xl-3  pt-3">
+            <div class="col-12 col-md-5 col-lg-4 col-xxl-3 text-center px-2 px-sm-5 px-md-1">
+                <img src="./images/portfolio/compositions/onceUponTree.png" class="img-fluid float-center" alt="">
+            </div>
+
+            <div
+                class="contentCol align-self-stretch col-12 col-md-7 col-lg-6 col-xxl-5 pt-3 pt-md-0 px-2 px-sm-5 px-md-2">
+                <h2 class="smallH2">Once Upon a Tree</h2>
+                <h3>(2023)</h3>
+
+                <div class="row align-items-start h-75 p-0 m-0 py-3 py-md-1 py-xl-3 pb-5 pb-md-0">
+
+                    <div class="col-12 align-items-center m-0 p-0">
+                        <p class="descriptiveMem p-0 m-0 ">
+                            <i>Once Upon a Tree</i>
+                            was composed using and mixing the musical material from the installation
+                            <i>tree-dimensional</i>, that was created until july 2023.
+                        </p>
+                        <p class="descriptiveMemOthers p-0">
+                            In short, the sound objects manipulated samples
+                            from leaves and wood sound recordings
+                            It is composed in ambisonics – 3rd order, all while keeping in mind the tree's structure and
+                            the 360-degree stop-motion videos created for the installation.
+                        </p>
+                    </div>
+                </div>
+
+                <p class="bottomLinks p-0 m-0 px-2 px-sm-5 px-md-2"><a href="" target="_blank">.binaural recording</a>
+                </p>
+
+            </div>
+        </section>
+
+        <!-- CONTEUDO -->
+        <section class="row align-items-stretch justify-content-center px-1 px-xl-3  pt-3 mb-md-4">
+            <div class="col-12 col-md-5 col-lg-4 col-xxl-3 text-center px-2 px-sm-5 px-md-1">
+                <img src="./images/portfolio/compositions/buchlaStudies.png" class="img-fluid float-center" alt="">
+            </div>
+
+            <div
+                class="contentCol align-self-stretch col-12 col-md-7 col-lg-6 col-xxl-5 pt-3 pt-md-0 px-2 px-sm-5 px-md-2">
+                <h2 class="smallH2">Three Buchla Studies</h2>
+                <h3>(2021)</h3>
+
+                <div class="row align-items-start h-75 p-0 m-0 py-3 py-md-1 py-xl-3 pb-5 pb-md-0">
+
+                    <div class="col-12 align-items-center m-0 p-0">
+                        <p class="descriptiveMem p-0 m-0 ">
+                            My series Three Buchla Studies was composed during my stay in Stockholm on 2020's winter, at
+                            Kungliga Musikhögskolan.
+                        </p>
+                        <p class="descriptiveMemOthers p-0">
+                            For me they were an introduction to the Buchla system and more than the pieces' montage
+                            process, exploring the sounds on Buchla was something important because I realized that it
+                            led me into a meditative state of mind.
+                        </p>
+                    </div>
+                </div>
+
+                <p class="bottomLinks p-0 m-0 px-2 px-sm-5 px-md-2"><a
+                        href="https://soundcloud.com/ema_ferreira/sets/buchla-studies" target="_blank">.soundcloud</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- DIVISOR -->
+        <section class=" row align-items-center justify-content-center px-1 px-xl-3" id="acoustic">
+            <!-- above lg screen size -->
+            <div class="col-4 d-md-none text-end py-3 pt-md-1 ps-2 ps-sm-5 m-0 mt-md-5">
+                <img src="./images/ondaWebsite_h.png" alt="img-fluid float-center" class="divisorOndaDuplo">
+            </div>
+            <div class="col-4 d-md-none text-center p-0 m-0 py-3 pt-md-1 m-0 mt-md-5">
+                <h1 class="m-0">acoustic</h1>
+            </div>
+            <div class="col-4 d-md-none text-start py-3 pt-md-1 pe-2 pe-sm-5 m-0 mt-md-5">
+                <img src="./images/ondaWebsite_h.png" alt="img-fluid float-center" class="divisorOndaDuplo">
+            </div>
+
+            <!-- from lg on -->
+            <div
+                class="d-none d-md-block col-md-4 col-lg-3 col-xxl-2 text-start py-3 pt-md-1 px-2 px-sm-5 px-md-1 m-0 m-0 mt-md-3">
+                <h1 class="m-0">acoustic</h1>
+            </div>
+            <div
+                class="d-none d-md-block col-md-8 col-lg-7 col-xxl-6 text-start py-3 pt-md-1 px-2 px-sm-5 m-0 m-0 mt-md-3">
+                <img src="./images/ondaWebsite_h.png" alt="img-fluid float-center" class="divisorOndaSoloV2">
+            </div>
+        </section>
+
+        <!-- CONTEUDO -->
+        <section class="row align-items-stretch justify-content-center px-1 px-xl-3  pt-3">
+            <div class="col-12 col-md-5 col-lg-4 col-xxl-3 text-center px-2 px-sm-5 px-md-1">
+                <img src="./images/portfolio/compositions/jardinsDeCristais.png" class="img-fluid float-center" alt="">
+            </div>
+
+            <div
+                class="contentCol align-self-stretch col-12 col-md-7 col-lg-6 col-xxl-5 pt-3 pt-md-0 px-2 px-sm-5 px-md-2">
+                <h2 class="smallH2">jardins de cristais</h2>
+                <h3>(2023)</h3>
+
+
+                <div class="row align-items-center h-50 p-0 m-0 py-3 py-md-1 py-xl-3 pb-5 pb-md-0">
+                    <div class="col-12 align-items-center m-0 p-0">
+                        <p class="text-center text-lg-start sinopseSmallSize m-0 p-0 pb-3 pb-md-0 "> between silence and
+                            noise,
+                            between the nature and the city: <br> hearing seagulls,
+                            peacocks and roosters against motorcycles, cars and their horns.
+                            <br> within this clash of sounds, within this clash of meanings.
+                        </p>
+                    </div>
+
+                    <div class="col-12 align-items-center m-0 p-0 pt-2 pt-md-3">
+                        <p class="descriptiveMem p-0 m-0 ">
+                            <i>jardins de cristais</i> is a music work for bass-clarinet and cello inspired by the
+                            soundscape
+                            of Jardins do Palácio de Cristal located at Porto.
+                        </p>
+                        <p class="descriptiveMemOthers typeOfWork p-0 pt-2">(this work was commissioned for the project
+                            Canto das Sementes by DME)
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </section>
+
+        <!-- CONTEUDO -->
+        <section class="row align-items-stretch justify-content-center px-1 px-xl-3  pt-3">
+            <div class="col-12 col-md-5 col-lg-4 col-xxl-3 text-center px-2 px-sm-5 px-md-1">
+                <img src="./images/portfolio/compositions/frutosDeSombra.png" class="img-fluid float-center" alt="">
+            </div>
+
+            <div
+                class="contentCol align-self-stretch col-12 col-md-7 col-lg-6 col-xxl-5 pt-3 pt-md-0 px-2 px-sm-5 px-md-2">
+                <h2 class="smallH2">frutos de sombra</h2>
+                <h3>(2023)</h3>
+
+                <div class="row align-items-start h-50 p-0 m-0 py-3 py-md-1 py-xl-3 pb-5 pb-md-0">
+                    <div class="col-12 align-items-center m-0 p-0">
+                        <p class="descriptiveMem p-0 m-0 ">
+                            <i>frutos de sombra</i> is a work for soprano and piano based on the poem "Rotina" by
+                            Eugénio de Andrade. <br> This poem is part of the book <i>As mãos e os Frutos</i>.
+                        </p>
+
+                        <p class="descriptiveMemOthers typeOfWork p-0 pt-2">(this work was commissioned for the project
+                            O Caderno de Eugénio by Duo Interdito)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row align-items-stretch justify-content-center px-1 px-xl-3  pt-3">
+            <div class="col-12 col-md-5 col-lg-4 col-xxl-3 text-center px-2 px-sm-5 px-md-1">
+                <img src="./images/portfolio/compositions/hesitacoesDeMurmurios.png" class="img-fluid float-center"
+                    alt="">
+            </div>
+
+            <div
+                class="contentCol align-self-stretch col-12 col-md-7 col-lg-6 col-xxl-5 pt-3 pt-md-0 px-2 px-sm-5 px-md-2">
+                <h2 class="smallH2">hesitações de murmúrios</h2>
+                <h3>(2021)</h3>
+
+                <div class="row align-items-start h-50 p-0 m-0 py-3 py-md-1 py-xl-3 pb-5 pb-md-0">
+                    <div class="col-12 align-items-center m-0 p-0">
+                        <p class="descriptiveMem p-0 m-0 ">
+                            <i>hesitações de murmúrios</i> is a work for string quartet based on the Portuguese folk
+                            song
+                            “Levanta-te Mineta”.
+                        </p>
+                        <p class="descriptiveMemOthers p-0">
+                            The most obvious relationships between the music written by me and the folk song are found
+                            in the character: <i>hesitações de murmúrios</i> is like a murmur full of hesitations, like
+                            a word
+                            or a sentence that we silence
+                            halfway through, like someone waking us up from a restful sleep, like someone asking for
+                            alms quietly.
+                        </p>
+                        <p class="descriptiveMemOthers typeOfWork p-0 pt-2">(this work was commissioned by Quarteto
+                            Euterpe)
+                        </p>
+                    </div>
+                </div>
+
+                <p class="bottomLinks p-0 m-0 px-2 px-sm-5 px-md-2"><a
+                        href="https://soundcloud.com/ema_ferreira/sets/buchla-studies" target="_blank">.live
+                        recording</a>
+                </p>
+            </div>
+        </section>
+
+        <section class="row align-items-stretch justify-content-center px-1 px-xl-3  pt-3 mb-md-4">
+            <div class="col-12 col-md-5 col-lg-4 col-xxl-3 text-center px-2 px-sm-5 px-md-1">
+                <img src="./images/portfolio/compositions/sobreAsLinhasNaParede.png" class="img-fluid float-center"
+                    alt="">
+            </div>
+
+            <div
+                class="contentCol align-self-stretch col-12 col-md-7 col-lg-6 col-xxl-5 pt-3 pt-md-0 px-2 px-sm-5 px-md-2">
+                <h2 class="smallH2">Sobre as linhas na parede</h2>
+                <h3>(2021)</h3>
+
+                <div class="row align-items-start h-50 p-0 m-0 py-3 py-md-1 py-xl-3 pb-5 pb-md-0">
+                    <div class="col-12 align-items-center m-0 p-0">
+                        <p class="descriptiveMem p-0 m-0 ">
+                            <i>Sobre as linhas na parede</i> is a duo for vibraphone and cello that illustrates a vague
+                            interpretation of the first lines of the poem "Sem nome e bastante breve" by Al Berto.
+                        </p>
+                        <p class="descriptiveMemOthers p-0">
+                            In a general way, the piece pretends to illustrate the static state of a wall (the "dark
+                            angles of the house") against the "mysterious lines" that appear, as said by Al Berto, in
+                            various forms and with different sounds.
+                            These lines can be on this wall and be visible when viewed in depth, or they may appear
+                            coming out of nowhere. The true is that they intersect with each other and with space and,
+                            although contrasting, are also part of it.
+                        </p>
+                    </div>
+                </div>
+
+                <p class="bottomLinks p-0 m-0 px-2 px-sm-5 px-md-2"><a
+                        href="https://www.youtube.com/watch?v=rBEWwmg1hQg" target="_blank">.live
+                        recording</a>
+                </p>
+            </div>
+        </section>
+
+
+        <!-- DIVISOR -->
+        <section class=" row align-items-center justify-content-center px-1 px-xl-3" id="forScreen">
+            <!-- above lg screen size -->
+            <div class="col-4 d-md-none text-end py-3 pt-md-1 ps-2 ps-sm-5 m-0 mt-md-5">
+                <img src="./images/ondaWebsite_h.png" alt="img-fluid float-center" class="divisorOndaDuplo">
+            </div>
+            <div class="col-4 d-md-none text-center p-0 m-0 py-3 pt-md-1 m-0 mt-md-5">
+                <h1 class="m-0">for screen</h1>
+            </div>
+            <div class="col-4 d-md-none text-start py-3 pt-md-1 pe-2 pe-sm-5 m-0 mt-md-5">
+                <img src="./images/ondaWebsite_h.png" alt="img-fluid float-center" class="divisorOndaDuplo">
+            </div>
+
+            <!-- from lg on -->
+            <div
+                class="d-none d-md-block col-md-4 col-lg-3 col-xxl-2 text-start py-3 pt-md-1 px-2 px-sm-5 px-md-1 m-0 mt-md-3">
+                <h1 class="m-0">for screen</h1>
+            </div>
+            <div class="d-none d-md-block col-md-8 col-lg-7 col-xxl-6 text-start py-3 pt-md-1 px-2 px-sm-5 m-0 mt-md-3">
+                <img src="./images/ondaWebsite_h.png" alt="img-fluid float-center" class="divisorOndaSoloV2">
+            </div>
+        </section>
+
+        <section class="row align-items-stretch justify-content-center px-1 px-xl-3  pt-3">
+            <div class="col-12 col-md-5 col-lg-4 col-xxl-3 text-center px-2 px-sm-5 px-md-1">
+                <img src="./images/portfolio/compositions/nosEAsPedras.png" class="img-fluid float-center" alt="">
+            </div>
+
+            <div
+                class="contentCol align-self-stretch col-12 col-md-7 col-lg-6 col-xxl-5 pt-3 pt-md-0 px-2 px-sm-5 px-md-2">
+                <h2 class="smallH2"><i>Nós e as Pedras</i></h2>
+                <h3>(2022)</h3>
+
+                <div class="row align-items-start h-50 p-0 m-0 py-3 py-md-1 py-xl-3 pb-4 pb-md-0">
+                    <div class="col-12 align-items-center m-0 p-0">
+                        <p class="descriptiveMem p-0 m-0 ">
+                            <i>Nós e as Pedras</i> is a short movie by João Castro e Cunha and Maria Cândida Ribeirinha,
+                            made during their Master in Cinema at ESMAD.
+                        </p>
+                    </div>
+                </div>
+
+                <p class="bottomLinks p-0 m-0 px-2 px-sm-5 px-md-2"><a
+                        href="https://ipppt-my.sharepoint.com/:f:/g/personal/4180097_esmae_ipp_pt/Et6lXFqHF1ZAibvdSPCEgmcBBVB8a4WVXXHnWKbASJSo3g?e=nosozH"
+                        target="_blank">.music
+                        scenes</a>
+                </p>
+            </div>
+        </section>
+
+        <section class="row align-items-stretch justify-content-center px-1 px-xl-3  pt-3">
+            <div class="col-12 col-md-5 col-lg-4 col-xxl-3 text-center px-2 px-sm-5 px-md-1">
+                <img src="./images/portfolio/compositions/goldenMinutes.png" class="img-fluid float-center" alt="">
+            </div>
+
+            <div
+                class="contentCol align-self-stretch col-12 col-md-7 col-lg-6 col-xxl-5 pt-3 pt-md-0 px-2 px-sm-5 px-md-2">
+                <h2 class="smallH2"><i>Golden Minutes</i> <span class="alignHyphens">–</span> new score for the Regards
+                    Croisés at MCM 2022</h2>
+                <h3>(2022)</h3>
+
+                <div class="row align-items-start h-50 p-0 m-0 py-3 py-md-1 py-xl-3 pb-5 pb-md-0">
+                    <div class="col-12 align-items-center m-0 p-0">
+                        <p class="descriptiveMem p-0 m-0 ">
+                            <i> Golden Minutes</i> is a film directed by Saulius Baradinskas, with original music by Rob
+                            Meyer.
+                        </p>
+                        <p class="descriptiveMemOthers p-0">
+                            During the program Regards Croisés by the Festival International Music & Cinema Marseille
+                            2022 a new composition was created for the cine-concert.
+                        </p>
+
+                        <p class="descriptiveMemOthers typeOfWork p-0 pt-2">
+                            (this new score was created in collaboration with Elie Remfort-Aurat and Felipe Aryani)</p>
+                    </div>
+                </div>
+
+                <p class="bottomLinks p-0 m-0 px-2 px-sm-5 px-md-2"><a
+                        href="https://www.youtube.com/watch?v=e2gnxhjuBtI&t=6s" target="_blank">.cine-concert</a>
+                </p>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/portfolio.js"></script>
+</body>
+
+</html>
