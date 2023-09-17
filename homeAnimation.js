@@ -36,7 +36,7 @@ function setup() {
 
     currentTime = millis();
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 6; i++) {
         prevTime[i] = currentTime;
         changeOn[i] = false;
         timers[i] = 200 + i * 100
@@ -53,7 +53,7 @@ function draw() {
 
     // to clean background
     rectMode(CORNER);
-    fill(color('#FFFEF7') , 255);
+    fill(color('#FFFEF7'), 255);
     noStroke();
     rect(0, canvas.height / 2.5 - (size + margem), canvas.width, canvas.height / 2.5 + (size + margem));
 
@@ -68,8 +68,11 @@ function draw() {
             image(imagesLive[i], size * (i - 8) + margem * (i - 8), canvas.height / 2.5 + (size + margem), size, size);
     }
 
-    for (let i = 0; i < 3; i++) {
-        changeImg(timers[i], i);
+    for (let i = 0; i < 6; i++) {
+        if (i < 3)
+            changeImg(timers[i], i);
+        else
+        changeImg(timers[i], i-3);
     }
 
 }
@@ -129,7 +132,7 @@ function changeImg(timer, funcNum) {
             imagesLive[randomLive[funcNum]] = imagesBank[randomBank];
 
             prevTime[funcNum] = currentTime;
-            timers[funcNum] = 200 + int(random(0, 100))
+            timers[funcNum] = 200 + int(random(0, 200))
             changeOn[funcNum] = false
         }
     }
