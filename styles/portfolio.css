@@ -64,6 +64,11 @@ nav {
     font-weight: 600;
 }
 
+.typeOfWork a{
+    font-weight: 400;
+}
+
+
 .typeOfWork{
     font-size: clamp(8px, 0.95vw, 10px);
 }
