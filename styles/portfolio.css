@@ -60,10 +60,8 @@ nav {
     margin-bottom: 0;
 }
 
-.descriptiveMemOthers a {
-    font-weight: 600;
-}
-
+.descriptiveMemOthers a,
+.descriptiveMem a,
 .typeOfWork a{
     font-weight: 400;
 }
