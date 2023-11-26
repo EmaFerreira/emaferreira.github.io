@@ -7,7 +7,7 @@
 #cv{
     margin-top: 8%;
     margin-bottom: 0px;
-    font-size: clamp(15px, 1.5vw, 16px);
+    font-size: clamp(13px, 0.95vw, 15px);
     font-weight: 600;
 
     /* para alinhar no bottom do div, a col parent tem de ter pos: relative */

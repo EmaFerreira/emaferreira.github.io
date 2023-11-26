@@ -43,6 +43,11 @@ p {
     top: +2px;
 }
 
+.alignUnderscore {
+    position: relative;
+    top: -2px;
+}
+
 a {
     color: #846970;
     text-decoration: none !important;
