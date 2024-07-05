@@ -47,7 +47,7 @@ td {
     font-family: 'Jost', sans-serif;
     color: #575D4E !important;
     background-color: #FFFEF7 !important;
-    font-size: clamp(9px, 0.85vw, 12px);
+    font-size: clamp(8px, 0.85vw, 12px);
     border-bottom: 1px solid #502a3426;
     border-left: 1px solid #502a3426;
 
