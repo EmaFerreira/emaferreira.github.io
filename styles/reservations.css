@@ -34,7 +34,7 @@ h3 {
 
 th {
     font-family: 'Advent Pro', sans-serif;
-color: #575D4E !important;
+    color: #575D4E !important;
     background-color: #FFFEF7 !important;
     font-weight: 600;
     font-size: clamp(9px, 0.85vw, 12px);
@@ -61,10 +61,10 @@ td {
 }
 
 
-.reservado{
+.reservado {
     text-decoration: line-through;
 }
 
-#prova{
-font-size: clamp(7px, 0.7vw, 10px);
+#prova {
+    font-size: clamp(6px, 0.65vw, 10px);
 }
