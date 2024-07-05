@@ -1,0 +1,70 @@
+.texto-topo {
+    font-size: 14px;
+}
+
+#nota {
+    font-size: 10px;
+
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Advent Pro', sans-serif;
+    color: #502A34;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h2 {
+    color: #575D4E;
+    font-size: 18px;
+}
+
+
+h3 {
+    color: #575D4E;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+th {
+    font-family: 'Advent Pro', sans-serif;
+color: #575D4E !important;
+    background-color: #FFFEF7 !important;
+    font-weight: 600;
+    font-size: clamp(9px, 0.85vw, 12px);
+    border-bottom: 1px solid #502a3426;
+
+    align-content: center;
+}
+
+td {
+    font-family: 'Jost', sans-serif;
+    color: #575D4E !important;
+    background-color: #FFFEF7 !important;
+    font-size: clamp(9px, 0.85vw, 12px);
+    border-bottom: 1px solid #502a3426;
+    border-left: 1px solid #502a3426;
+
+    align-content: center;
+}
+
+.diaExpo {
+    font-size: clamp(14px, 1.5vw, 22px);
+    color: #502A34 !important;
+
+}
+
+
+.reservado{
+    text-decoration: line-through;
+}
+
+#prova{
+font-size: clamp(7px, 0.7vw, 10px);
+}
