@@ -4,15 +4,15 @@ const portfolioSubMenu = document.getElementById("subMenuPortfolioSections");
 function widthResizer() {
     let width = window.innerWidth
     console.log(width)
-    if (width < 768){
+    if (width < 768) {
         portfolioSubMenu.style.top = "45px";
     }
 
-    else{
+    else {
         portfolioSubMenu.style.top = "33px";
-       
+
     }
-        
+
 }
 
 // Getting the width of the browser on load
