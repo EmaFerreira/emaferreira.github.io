@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ema Ferreira</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- font-family: 'Advent Pro', sans-serif; -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- font-family: 'Jost', sans-serif; -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap stylessheet link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- my own stylesheet -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/portfolio.css">
+
+</head>
+
+<body>
+    <!-- navbar top: portfolio -->
+    <nav class="navbar fixed-top navbar-expand-lg d-none d-lg-block">
+        <div class="container-fluid">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0" id="portNavBarContent">
+                <li class="nav-item">
+                    <a class="nav-link" href="./installations.html">art installations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./compositions.html">music compositions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./interdisciplinary.html">interdisciplinary work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pedagogics.html">pedagogical projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./research.html">research</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./otherProjects.html">+ stuff</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- navbar down: main navbar -->
+
+    <nav class="navbar fixed-bottom navbar-expand-lg d-none d-lg-block">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" id="bottomNavbarTitle"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                    <path
+                        d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+                    <path fill-rule="evenodd"
+                        d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+                </svg></a>
+            <ul class="navbar-nav me-auto mb-2 mb-md-0" id="bottomNavbar">
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">about</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./agenda.html">agenda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">contact</a>
+                </li>
+        </div>
+    </nav>
+
+    <!-- collapsed navbar: main navbar -->
+    <nav class="navbar fixed-top  navbar-expand-lg d-lg-none" id="mainNavBar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">PORTFOLIO</a>
+            <button class="navbar-toggler border-0 shadow-none custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" id="buttonT">
+                <span id="iconT">+</span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0" id="mainNavBarContent">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./installations.html">art installations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./compositions.html">music compositions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./interdisciplinary.html">interdisciplinary work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pedagogics.html">pedagogical projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./research.html">research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./otherProjects.html">+ stuff</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown-center d-lg-none" id="portfolioDropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" id="dropDownReturn"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+                                <path fill-rule="evenodd"
+                                    d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li> <a class="dropdown-item" href="./about.html">about</a></li>
+                            <li><a class="dropdown-item" href="./agenda.html">agenda</a></li>
+                            <li><a class="dropdown-item" href="./contact.html">contact</a></li>
+                        </ul>
+                    </li>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <main class="container-fluid my-5 scrollMargin" id="portContainer">
+
+        <div class="row align-items-center">
+            <div class="col-3"></div>
+            <div class="col-6 text-center mt-5">
+                <p>page update in progress.</p>
+
+            </div>
+        </div>
+
+        <!-- DEFINIÇÕES DAS IMAGENS: 300pi de definição; 1512px por 1512px; 32bit -->
+
+        <!-- SUBMENU -->
+
+        <!-- <section class="sticky-top row align-items-center justify-content-center px-2 pe-sm-4 px-md-1 px-xl-3 py-0 py-1"
+            id="subMenuPortfolioSections">
+            <div class="col-6 col-md-12 col-lg-10 col-xxl-8 text-start text-md-start p-0 m-0 px-1 px-md-1 ">
+                <p class="p-0 m-0"><a href="#ano2024">2025</a> / <a href="#ano2023">2023</a> / <a
+                        href="#ano2022">2022</a></p>
+            </div>
+            <div class="col-6 d-md-none text-end p-0 m-0 px-1 px-md-1 ">
+                <p class="p-0 m-0">art installations</p>
+            </div>
+        </section> -->
+
+        <!-- CONTEUDO - apenas este 1º tem margem top -->
+        <!-- <section class="row align-items-center justify-content-center px-1 px-xl-3 pt-1 pt-md-2" id="ano2025">
+            <div class="col-12 col-md-5 col-lg-4 col-xxl-3 text-center px-2 px-sm-5 px-md-1">
+                <img src="./images/portfolio/installations/pedras.png" class="img-fluid float-center" alt="">
+            </div>
+
+            <div
+                class="contentCol align-self-stretch col-12 col-md-7 col-lg-6 col-xxl-5 pt-3 pt-md-0 px-2 px-sm-5 px-md-2">
+                <h2>As pedras são ouvintes ad aeternum?</h2>
+                <h3>(2024)</h3>
+
+                <div class="row align-items-center h-75 p-0 m-0 py-3 pb-5 pb-md-0">
+                    <div class="col-12 align-items-center m-0 p-0">
+                        <p class="text-center text-lg-start sinopse  m-0 p-0  pb-4 pb-md-0 ">
+                            Is it possible to understand non-human entities without falling into assumptions biased by
+                            our own existence?</p>
+                    </div>
+
+                    <div class="col-12 align-items-center m-0 p-0 pt-2">
+                        <p class="descriptiveMem p-0 m-0 ">
+                            "As pedras são ouvintes ad aeternum?" is an interactive installation that listens to the
+                            present space and recalls the sound of
+                            past spaces, inside a feedback produced by those who stand on and around a wooden bench. But
+                            these are not its ears. Perhaps one can hear an interpretation of Casa Branca. Or is it
+                            a memory?
+
+
+                        </p>
+                        <p class="descriptiveMemOthers p-0">
+                            Feedback can be eternal, and as Mr. Manuel told us, so are the stars and the
+                            stones.</p>
+                        <p class="descriptiveMemOthers typeOfWork p-0 pt-2">
+                            (<i>As pedras são ouvintes ad aeternum?</i>
+                            was created during the artistic residency ANIMAIS by <a
+                                href="https://www.instagram.com/cada1dotnet/" target="_blank">CADA</a>, at Estação
+                            Cooperativa de Casa Branca)</p>
+                    </div>
+                </div>
+
+
+
+                <p class="bottomLinks p-0 m-0 px-2 px-sm-5 px-md-2"><a href="https://youtu.be/awqd7KA70SQ"
+                        target="_blank">.teaser</a>
+                </p>
+            </div>
+        </section> -->
+
+        <!-- DIVISOR -->
+        <!-- <div class="row align-items-center justify-content-start">
+            <div class="col-12 col-md-5 text-center text-md-end p-4 px-md-2">
+                <img src="./images/ondaWebsite_h.png" alt="img-fluid float-center" class="divisorOndaSolo">
+            </div>
+        </div> -->
+
+        <!-- <section class="row align-items-center justify-content-center px-1 px-xl-3 pt-1 pt-md-0">
+            <div class="col-12 col-md-5 col-lg-4 col-xxl-3 text-center px-2 px-sm-5 px-md-1">
+                <img src="./images/portfolio/installations/fiosSilere.png" class="img-fluid float-center" alt="">
+            </div>
+
+            <div
+                class="contentCol align-self-stretch col-12 col-md-7 col-lg-6 col-xxl-5 pt-3 pt-md-0 px-2 px-sm-5 px-md-2">
+                <h2>Fios de Silere</h2>
+                <h3>(2024)</h3>
+
+                <div class="row align-items-center h-75 p-0 m-0 py-3 pb-5 pb-md-0">
+                    <div class="col-12 align-items-center m-0 p-0">
+                        <p class="text-center text-lg-start sinopse  m-0 p-0  pb-4 pb-md-0 ">
+                            "tacere" refers to the silence of speech, and "silere" refers to the silence of
+                            nature. Neither is an absence nor merely an auditory phenomenon. </p>
+                    </div>
+
+                    <div class="col-12 align-items-center m-0 p-0 pt-2">
+                        <p class="descriptiveMem p-0 m-0 ">
+                            We do not choose to feel silence (whether in the sense of tension or tranquillity); however,
+                            we choose to confront silence to perceive its materiality. As for noise, just as we do not
+                            choose to feel it, we also do not choose to confront it: it enters through our ears and
+                            eyes, disrupting the body and space without seeking permission and brutally exposing its
+                            materiality.
+                        </p>
+                        <p class="descriptiveMemOthers p-0">
+                            By seizing our body and senses, noise becomes something solitary. When we focus our
+                            attention on the materiality of silence, it compels a disposition to the body that almost
+                            locks our breath and movements, yet attention remains available for every detail around us.
+                            It is precisely this sensory openness that makes silence an enhancer of bodily senses,
+                            thought, and creation.
+                        </p>
+                        <p class="descriptiveMemOthers p-0">
+                            In Fios de Silere, silence is materialized by the filaments of small incandescent bulbs and
+                            the light they emit, by the vibrations of speaker cones producing sound and causing the
+                            soil above them to tremble, in the stone walls of the Torreão do Centro de Memória, and in
+                            the scent of damp soil sround the room.</p>
+                        <p class="descriptiveMemOthers typeOfWork p-0 pt-2">(<i>Fios de Silere</i> is part of my
+                            master's project <a
+                                href="https://recipp.ipp.pt/bitstream/10400.22/25867/1/DM_EmaFerreira_2024.pdf"
+                                target="_blank">“Fios de Silere: the materiality of silence as an audiovisual
+                                installation”</a>, consisting of 15' sessions)</p>
+                    </div>
+                </div>
+
+
+
+                <p class="bottomLinks p-0 m-0 px-2 px-sm-5 px-md-2"><a
+                        href="https://youtu.be/Tr934_zV5xU?si=SY4GiQs85HKHuLbD" target="_blank">.teaser(june/24)</a> <a
+                        href="https://vimeo.com/970533955" target="_blank">.session-recording</a>
+                </p>
+            </div>
+        </section> -->
+
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/portfolio.js"></script>
+</body>
+
+</html>
