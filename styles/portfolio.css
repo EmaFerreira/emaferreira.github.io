@@ -50,6 +50,7 @@ nav {
 
 .descriptiveMem,
 .bottomLinks,
+.bottomLinksResearch,
 .descriptiveMemOthers {
     font-size: clamp(10px, 0.85vw, 14px);
     line-height: 1.15;
@@ -81,6 +82,18 @@ nav {
     position: absolute;
     bottom: 0;
     left: 0;
+
+}
+
+.bottomLinksResearch {
+    margin-top: 8%;
+    margin-bottom: 0px;
+    font-weight: 600;
+
+    /* para alinhar no bottom do div, a col parent tem de ter pos: relative */
+/*     position: absolute;
+    bottom: 0;
+    left: 0; */
 
 }
 
